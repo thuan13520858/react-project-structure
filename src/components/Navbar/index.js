@@ -30,6 +30,9 @@ export default class Navbar extends Component {
                 <NavLink activeClassName = "active" className="nav-link" to="/list-movie">
                   ListMovie
                 </NavLink>
+                <NavLink activeClassName = "active" className="nav-link" to="/login">
+                  Login
+                </NavLink>
               </div>
             </div>
           </nav>

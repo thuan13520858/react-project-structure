@@ -1,6 +1,7 @@
 import AdminLayout from "../containers/Admin";
 import DashboardPage from "../containers/Admin/DashboardPage";
 import AddUserPage from "../containers/Admin/AddUserPage";
+import Login from "../containers/Home/Login/Login";
 
 const { default: HomeLayout } = require("../containers/Home");
 const { default: HomePage } = require("../containers/Home/HomePage");
@@ -11,7 +12,7 @@ const routeHome = [
     {
         exact: true,
         path: '/',
-        component: HomeLayout
+        component: HomePage
     },
     {
         exact: false,
@@ -28,6 +29,11 @@ const routeHome = [
         path: '/list-movie',
         component: ListMovie
     },
+    {
+        exact: false,
+        path: '/login',
+        component: Login
+    }
 ]
 
 const routeAdmin = [
